@@ -1,10 +1,24 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '@/views/HomeView.vue'
+import RollStatsPage from '@/views/RollStatsPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [],
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: HomeView,
+    },
+    {
+      path: '/RollStatsPage',
+      name: 'RollStatsPage',
+      component: RollStatsPage,
+    },
+  ],
 })
 
+// Använd som referens när du skapar dina egna router.
 /* {
       path: '/',
       name: 'home',

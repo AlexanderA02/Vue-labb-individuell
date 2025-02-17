@@ -1,10 +1,10 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import Navbar from './components/Navbar.vue'
 </script>
 
 <template>
-  <h1>Hello World!</h1>
-
+  <Navbar></Navbar>
   <RouterView />
 </template>
 
