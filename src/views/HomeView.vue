@@ -1,28 +1,24 @@
 <script setup>
-import { onMounted, ref } from 'vue'
-import axios from 'axios'
+import { ref } from 'vue'
+import DndClassList from '@/components/DndClassList.vue'
 
 // Data/variables
-const dndClasses = ref(null)
-
-// Methods/functions
-const getClasses = () => {
-  axios.get('dndClassesDB.json').then((response) => {
-    dndClasses.value = response.data
-  })
-}
-
-// onMounted gör att getClasses körs när componenten HomeView.vue monteras i html:n.
-onMounted(getClasses)
+// ref() ska enbart skrivas på variabler som ska autouppdateras i html:n.
+const difficulty = ref(null)
 </script>
 
 <template>
   <h1>Landing page</h1>
-  <ul>
-    <li v-for="dndClass in dndClasses">
-      {{ dndClass.name }}
-    </li>
-  </ul>
+
+  <select v-model="difficulty" name="difficulty" id="difficulty">
+    <option selected :value="null">Select difficulty</option>
+    <option value="hard">Hard</option>
+    <option value="medium">Medium</option>
+    <option value="easy">Easy</option>
+  </select>
+  <p>Difficulty:{{ difficulty }}</p>
+
+  <DndClassList :difficulty="difficulty"></DndClassList>
 </template>
 
 <style></style>
