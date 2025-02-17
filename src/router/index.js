@@ -11,8 +11,8 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/RollStatsPage',
-      name: 'RollStatsPage',
+      path: '/roll-stats',
+      name: 'roll-stats',
       component: RollStatsPage,
     },
   ],

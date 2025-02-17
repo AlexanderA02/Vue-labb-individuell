@@ -6,7 +6,7 @@ import { RouterLink } from 'vue-router'
   <section>
     <h1>D&D for beginners</h1>
     <nav>
-      <RouterLink to="/RollStatsPage"> Roll stats </RouterLink>
+      <RouterLink to="/roll-stats"> Roll stats </RouterLink>
     </nav>
   </section>
 </template>
