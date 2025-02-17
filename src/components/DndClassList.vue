@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, computed } from 'vue'
 import axios from 'axios'
 import { RouterLink } from 'vue-router'
 
@@ -18,14 +18,21 @@ const getClasses = () => {
   })
 }
 
+const filterOnDifficulty = computed(() => {
+  return dndClasses.value.filter((dndClass) => {
+    return dndClass.difficulty === props.difficulty
+  })
+})
+
 // onMounted gör att getClasses körs när componenten HomeView.vue monteras i html:n.
 onMounted(getClasses)
 </script>
 
 <template>
   <p>Prop:{{ props.difficulty }}</p>
-  <ul>
-    <li v-for="dndClass in dndClasses">
+  <!-- v-if gör att listan enbart renderas om dndClasses har ett värde annat än undefined, detta undviker en exeption. -->
+  <ul v-if="dndClasses">
+    <li v-for="dndClass in filterOnDifficulty">
       <!-- :to gör att allt efter = tolkas som JavaScript, annars tolkas det bara som en sträng. -->
       <RouterLink :to="`/roll-stats/${dndClass.name}`">
         {{ dndClass.name }}

@@ -1,5 +1,6 @@
 [
-  { "id": "1", "name": "Barbarian" },
-  { "id": "2", "name": "Bard" },
-  { "id": "3", "name": "Cleric" }
+  { "id": "1", "name": "Barbarian", "difficulty": "easy" },
+  { "id": "2", "name": "Bard", "difficulty": "hard" },
+  { "id": "3", "name": "Cleric", "difficulty": "medium" },
+  { "id": "4", "name": "Druid", "difficulty": "medium" }
 ]

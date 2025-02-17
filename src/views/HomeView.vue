@@ -17,6 +17,7 @@ const difficulty = ref(null)
     <option value="easy">Easy</option>
   </select>
   <p>Difficulty:{{ difficulty }}</p>
+  <p></p>
 
   <DndClassList :difficulty="difficulty"></DndClassList>
 </template>
