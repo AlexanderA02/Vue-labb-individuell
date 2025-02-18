@@ -7,7 +7,6 @@ const route = useRoute()
 
 <template>
   <h1>Roll your stats here {{ route.params.dndClass }}.</h1>
-  <pre>{{ route }}</pre>
 </template>
 
 <style></style>

@@ -9,25 +9,20 @@ const difficulty = ref('all')
 </script>
 
 <template>
-  <h1>Landing page</h1>
-
-  <select v-model="difficulty" name="difficulty" id="difficulty">
-    <option selected value="all">All difficulties</option>
-    <option value="hard">Hard</option>
-    <option value="medium">Medium</option>
-    <option value="easy">Easy</option>
-  </select>
-  <p>Difficulty:{{ difficulty }}</p>
-
-  <DndClassList :difficulty="difficulty"></DndClassList>
-
   <main>
+    <h1>Landing page</h1>
     <Hero></Hero>
+
+    <select v-model="difficulty" name="difficulty" id="difficulty">
+      <option selected value="all">All difficulties</option>
+      <option value="hard">Hard</option>
+      <option value="medium">Medium</option>
+      <option value="easy">Easy</option>
+    </select>
+    <p>Difficulty:{{ difficulty }}</p>
+
+    <DndClassList :difficulty="difficulty"></DndClassList>
   </main>
 </template>
 
-<style scoped>
-main {
-  height: 60vh;
-}
-</style>
+<style scoped></style>

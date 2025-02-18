@@ -24,7 +24,7 @@ section {
   background-color: black;
   color: white;
 
-  height: 100%;
+  height: 60vh;
   width: 100%;
 }
 
