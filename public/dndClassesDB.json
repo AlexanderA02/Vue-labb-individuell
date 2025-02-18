@@ -1,6 +1,30 @@
 [
-  { "id": "1", "name": "Barbarian", "difficulty": "easy" },
-  { "id": "2", "name": "Bard", "difficulty": "hard" },
-  { "id": "3", "name": "Cleric", "difficulty": "medium" },
-  { "id": "4", "name": "Druid", "difficulty": "medium" }
+  {
+    "id": "1",
+    "name": "Barbarian",
+    "difficulty": "easy",
+    "description": "This is the class description",
+    "recommended-stats": ["Recommended stat 1", "Recommended stat 2"]
+  },
+  {
+    "id": "2",
+    "name": "Bard",
+    "difficulty": "hard",
+    "description": "This is the class description",
+    "recommended-stats": ["Recommended stat 1", "Recommended stat 2"]
+  },
+  {
+    "id": "3",
+    "name": "Cleric",
+    "difficulty": "medium",
+    "description": "This is the class description",
+    "recommended-stats": ["Recommended stat 1", "Recommended stat 2"]
+  },
+  {
+    "id": "4",
+    "name": "Druid",
+    "difficulty": "medium",
+    "description": "This is the class description",
+    "recommended-stats": ["Recommended stat 1", "Recommended stat 2"]
+  }
 ]
