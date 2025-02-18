@@ -3,17 +3,17 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <section>
+  <header>
     <h1>D&D for beginners</h1>
     <nav>
       <RouterLink to="/roll-stats"> Roll stats </RouterLink>
     </nav>
-  </section>
+  </header>
 </template>
 
 <!-- Byt ut mot Tailwind senare -->
 <style scoped>
-section {
+header {
   background-color: black;
   color: white;
 

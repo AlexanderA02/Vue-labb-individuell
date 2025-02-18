@@ -32,8 +32,13 @@ onMounted(getClasses)
   <p>Prop:{{ props.difficulty }}</p>
   <!-- v-if gör att listan enbart renderas om dndClasses har ett värde annat än undefined, detta undviker en exeption. -->
   <ul v-if="dndClasses">
-    <li v-for="dndClass in filterOnDifficulty">
+    <li v-if="difficulty !== 'all'" v-for="dndClass in filterOnDifficulty">
       <!-- :to gör att allt efter = tolkas som JavaScript, annars tolkas det bara som en sträng. -->
+      <RouterLink :to="`/roll-stats/${dndClass.name}`">
+        {{ dndClass.name }}
+      </RouterLink>
+    </li>
+    <li v-else v-for="dndClass in dndClasses">
       <RouterLink :to="`/roll-stats/${dndClass.name}`">
         {{ dndClass.name }}
       </RouterLink>
