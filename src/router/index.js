@@ -11,7 +11,8 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/roll-stats/:dndClass',
+      // ? efter dndClass innebär att det inte behövs finnas en dndClass för att path:en ska matchas
+      path: '/roll-stats/:dndClass?',
       name: 'roll-stats',
       component: RollStatsPage,
     },

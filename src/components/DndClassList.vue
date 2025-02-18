@@ -1,35 +1,26 @@
 <script setup>
 import { onMounted, ref, computed } from 'vue'
-import axios from 'axios'
 import Card from './Card.vue'
+import { useDndClassesStore } from '@/pinia-store/store'
 
 // props
 const props = defineProps({
   difficulty: String,
 })
 
-// data/variabler
-const dndClasses = ref(null)
+const dndClassesStore = useDndClassesStore()
 
 // Methods/functions
-const getClasses = () => {
-  axios.get('dndClassesDB.json').then((response) => {
-    dndClasses.value = response.data
-  })
-}
-
 const filterOnDifficulty = computed(() => {
-  return dndClasses.value.filter((dndClass) => {
+  // .value ska inte användas här precis som att det inte ska användas i html:n
+  return dndClassesStore.dndClasses.filter((dndClass) => {
     return dndClass.difficulty === props.difficulty
   })
 })
-
-// onMounted gör att getClasses körs när componenten HomeView.vue monteras i html:n.
-onMounted(getClasses)
 </script>
 
 <template>
-  <section v-if="dndClasses">
+  <section v-if="dndClassesStore.dndClasses">
     <!-- v-if gör att listan enbart renderas om dndClasses har ett värde annat än undefined, detta undviker en exeption. -->
     <!-- [] används runt recommended-stats eftersom att man vanligtvis inte kan ha bindestreck i JavaScript variabel namn. -->
     <Card
@@ -43,7 +34,7 @@ onMounted(getClasses)
     ></Card>
     <Card
       v-else
-      v-for="dndClass in dndClasses"
+      v-for="dndClass in dndClassesStore.dndClasses"
       :key="dndClass.name"
       :name="dndClass.name"
       :difficulty="dndClass.difficulty"
