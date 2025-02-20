@@ -3,9 +3,9 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <header>
+  <header class="bg-red-950 text-white flex justify-between items-center text-3xl h-20 p-3.5">
     <h1>D&D for beginners</h1>
-    <nav>
+    <nav class="text-2xl">
       <RouterLink to="/roll-stats"> Roll stats </RouterLink>
     </nav>
   </header>
@@ -13,7 +13,7 @@ import { RouterLink } from 'vue-router'
 
 <!-- Byt ut mot Tailwind senare -->
 <style scoped>
-header {
+/* header {
   background-color: black;
   color: white;
 
@@ -25,5 +25,5 @@ header {
   padding-right: 2em;
 
   height: 10vh;
-}
+} */
 </style>

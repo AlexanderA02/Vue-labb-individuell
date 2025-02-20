@@ -12,7 +12,7 @@ const sum = ref(0)
 
 <template>
   <h1 v-if="route.params.dndClass">Roll your stats here {{ route.params.dndClass }}.</h1>
-  <h1 v-else>Rolle your stats here champion!</h1>
+  <h1 v-else>Roll your stats here champion!</h1>
   <ul v-for="dndClass in dndClassesStore.dndClasses">
     <li>{{ dndClass.name }}</li>
   </ul>

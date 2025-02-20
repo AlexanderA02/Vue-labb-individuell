@@ -1,8 +1,10 @@
 <script setup></script>
 
 <template>
-  <section>
-    <p>
+  <section
+    class="text-white bg-center bg-cover bg-[url('src/assets/dragon_fire.png')] flex justify-center items-center"
+  >
+    <p class="text-center w-3/10 max-h-8/10 bg-red-950 p-8 rounded-2xl">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere nunc sed eros feugiat
       fermentum. Integer ut sodales purus. Fusce consequat ultricies facilisis. Praesent id dui ut
       ligula varius consequat. Nulla eget dictum libero. Praesent elementum felis nec tortor
@@ -16,19 +18,14 @@
 <!-- Temporär lösning, byt ut mot Tailwind css senare! -->
 <style scoped>
 section {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 
-  background-color: black;
-  color: white;
+  color: white; */
 
   height: 60vh;
   width: 100%;
-}
-
-p {
-  width: 40%;
 }
 </style>
