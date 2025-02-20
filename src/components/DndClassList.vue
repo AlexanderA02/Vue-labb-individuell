@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref, computed } from 'vue'
+import { computed } from 'vue'
 import Card from './Card.vue'
 import { useDndClassesStore } from '@/pinia-store/store'
 
@@ -20,7 +20,7 @@ const filterOnDifficulty = computed(() => {
 </script>
 
 <template>
-  <section v-if="dndClassesStore.dndClasses">
+  <section v-if="dndClassesStore.dndClasses" class="grid grid-cols-2 place-items-center">
     <!-- v-if gör att listan enbart renderas om dndClasses har ett värde annat än undefined, detta undviker en exeption. -->
     <!-- [] används runt recommended-stats eftersom att man vanligtvis inte kan ha bindestreck i JavaScript variabel namn. -->
     <Card

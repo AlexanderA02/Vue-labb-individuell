@@ -10,21 +10,25 @@ const props = defineProps({
 </script>
 
 <template>
-  <section>
-    <RouterLink :to="`/roll-stats/${props.name}`">
+  <section
+    class="bg-red-950 text-white border-2 border-amber-400 pl-5 pt-5 m-3 rounded-xl min-h-60 w-120"
+  >
+    <RouterLink :to="`/roll-stats/${props.name}`" class="text-2xl font-bold">
       {{ props.name }}
     </RouterLink>
-    <p>Difficulty: {{ props.difficulty }}</p>
-    <p>Description: {{ props.description }}</p>
-    <p v-for="stat in props.recommendedStats">Recommended primary stat: {{ stat }}</p>
+    <p><span class="font-semibold">Difficulty:</span> {{ props.difficulty }}</p>
+    <p><span class="font-semibold">Description:</span> {{ props.description }}</p>
+    <p v-for="stat in props.recommendedStats">
+      <span class="font-semibold">Recommended stat:</span> {{ stat }}
+    </p>
   </section>
 </template>
 
 <style scoped>
-section {
+/* section {
   background-color: black;
   color: white;
   border: solid 2px red;
   margin: 1em;
-}
+} */
 </style>

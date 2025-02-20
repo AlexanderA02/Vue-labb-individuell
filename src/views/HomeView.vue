@@ -8,7 +8,7 @@ const difficultySelected = ref('all')
 </script>
 
 <template>
-  <main>
+  <main class="min-h-screen">
     <Hero></Hero>
     <FilterComp
       @difficulty-selected="(difficulty) => (difficultySelected = difficulty)"
