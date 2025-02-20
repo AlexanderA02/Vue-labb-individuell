@@ -13,7 +13,7 @@ const props = defineProps({
   <section
     class="m-3 min-h-60 w-120 rounded-xl border-2 border-amber-400 bg-red-950 pt-5 pl-5 text-white"
   >
-    <RouterLink :to="`/roll-stats/${props.name}`" class="text-2xl font-bold">
+    <RouterLink :to="`/roll-stats/${props.name}`" class="text-2xl font-bold hover:underline">
       {{ props.name }}
     </RouterLink>
     <p><span class="font-semibold">Difficulty:</span> {{ props.difficulty }}</p>

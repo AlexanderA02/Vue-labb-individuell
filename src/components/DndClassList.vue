@@ -20,8 +20,8 @@ const filterOnDifficulty = computed(() => {
 </script>
 
 <template>
+  <!-- v-if gör att sektionen enbart renderas om dndClasses har ett värde annat än undefined, detta undviker en exeption. -->
   <section v-if="dndClassesStore.dndClasses" class="grid grid-cols-2 place-items-center">
-    <!-- v-if gör att listan enbart renderas om dndClasses har ett värde annat än undefined, detta undviker en exeption. -->
     <!-- [] används runt recommended-stats eftersom att man vanligtvis inte kan ha bindestreck i JavaScript variabel namn. -->
     <Card
       v-if="difficulty !== 'all'"
@@ -43,5 +43,3 @@ const filterOnDifficulty = computed(() => {
     ></Card>
   </section>
 </template>
-
-<style scoped></style>
