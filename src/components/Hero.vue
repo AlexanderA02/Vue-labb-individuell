@@ -2,9 +2,9 @@
 
 <template>
   <section
-    class="text-white bg-center bg-cover bg-[url('src/assets/dragon_fire.png')] flex justify-center items-center"
+    class="flex items-center justify-center bg-[url('src/assets/dragon_fire.png')] bg-cover bg-center text-white"
   >
-    <p class="text-center w-3/10 max-h-8/10 bg-red-950 p-8 rounded-2xl">
+    <p class="max-h-8/10 w-3/10 rounded-2xl bg-red-950 p-8 text-center">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere nunc sed eros feugiat
       fermentum. Integer ut sodales purus. Fusce consequat ultricies facilisis. Praesent id dui ut
       ligula varius consequat. Nulla eget dictum libero. Praesent elementum felis nec tortor

@@ -12,14 +12,14 @@ watch(difficulty, (difficulty) => {
 </script>
 
 <template>
-  <section class="bg-black text-white h-40 flex items-center flex-col p-3">
-    <h2 class="text-2xl font-bold m-2">Filter classes based on difficulty</h2>
+  <section class="flex h-40 flex-col items-center bg-black p-3 text-white">
+    <h2 class="m-2 text-2xl font-bold">Filter classes based on difficulty</h2>
 
     <select
       v-model="difficulty"
       name="difficulty"
       id="difficulty"
-      class="bg-red-950 h-50 w-50 m-2 rounded-sm"
+      class="m-2 h-50 w-50 rounded-sm bg-red-950"
     >
       <option selected value="all">All difficulties</option>
       <option value="hard">Hard</option>

@@ -3,9 +3,9 @@
 <script setup></script>
 
 <template>
-  <footer class="flex justify-around min-h-45 text-white bg-red-950">
+  <footer class="flex min-h-45 justify-around bg-red-950 text-white">
     <section class="max-w-100 pb-5">
-      <h1 class="text-2xl font-bold pt-5">Contact us</h1>
+      <h1 class="pt-5 text-2xl font-bold">Contact us</h1>
       <p>Telephone: 123 456 78 90</p>
       <p>Adress: coolstreet 42</p>
       <p>
@@ -15,7 +15,7 @@
       </p>
     </section>
     <section class="max-w-100 pb-5">
-      <h1 class="text-2xl font-bold pt-5">About us</h1>
+      <h1 class="pt-5 text-2xl font-bold">About us</h1>
       <p>
         This is a website about Dungeons and Dragons (D&D). Here you can read all about it's variios
         classes and even roll stats for them, or just roll in general becasue it's fun. Any

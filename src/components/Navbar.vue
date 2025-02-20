@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <header class="bg-red-950 text-white flex justify-between items-center text-3xl h-20 p-3.5">
+  <header class="flex h-20 items-center justify-between bg-red-950 p-3.5 text-3xl text-white">
     <h1>D&D for beginners</h1>
     <nav class="text-2xl">
       <RouterLink to="/roll-stats"> Roll stats </RouterLink>
