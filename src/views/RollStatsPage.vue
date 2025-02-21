@@ -14,10 +14,10 @@ const recommendedStats = ref([])
 
 <template>
   <main class="flex min-h-screen flex-col items-center pt-16">
-    <h2 v-if="route.params.dndClass" class="text-3xl font-bold">
+    <h2 v-if="route.params.dndClass" class="text-center text-3xl font-bold">
       Roll your stats here {{ route.params.dndClass }}.
     </h2>
-    <h2 v-else class="text-3xl font-bold">Roll your stats here champion!</h2>
+    <h2 v-else class="text-center text-3xl font-bold">Roll your stats here champion!</h2>
     <p class="mt-4 mb-6">Click the boxes to roll a stat.</p>
 
     <ul class="grid grid-cols-3 text-center">

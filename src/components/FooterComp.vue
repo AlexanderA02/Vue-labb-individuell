@@ -6,8 +6,8 @@
   <footer
     class="flex min-h-45 flex-col items-center justify-around bg-red-950 text-white lg:flex-row"
   >
-    <section class="max-w-100 pb-5">
-      <h1 class="pt-5 text-2xl font-bold">Contact us</h1>
+    <section class="m-5 max-w-100">
+      <h1 class="text-2xl font-bold">Contact us</h1>
       <p>Telephone: 123 456 78 90</p>
       <p>Adress: coolstreet 42</p>
       <p>
@@ -16,8 +16,8 @@
         website.
       </p>
     </section>
-    <section class="max-w-100 pb-5">
-      <h1 class="pt-5 text-2xl font-bold">About us</h1>
+    <section class="m-5 max-w-100">
+      <h1 class="text-2xl font-bold">About us</h1>
       <p>
         This is a website about Dungeons and Dragons (D&D). Here you can read all about it's variios
         classes and even roll stats for them by clicking on their names, or just roll in general

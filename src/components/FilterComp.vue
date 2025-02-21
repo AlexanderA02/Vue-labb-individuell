@@ -12,7 +12,7 @@ watch(difficulty, (difficulty) => {
 </script>
 
 <template>
-  <section class="flex h-40 flex-col items-center bg-black p-3 text-white">
+  <section class="flex h-42 flex-col items-center bg-black p-2 text-center text-white">
     <h2 class="m-2 text-2xl font-bold">Filter classes based on difficulty</h2>
 
     <select
