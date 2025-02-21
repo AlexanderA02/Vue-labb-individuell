@@ -19,7 +19,7 @@ watch(difficulty, (difficulty) => {
       v-model="difficulty"
       name="difficulty"
       id="difficulty"
-      class="m-2 h-50 w-50 rounded-sm bg-red-950"
+      class="m-2 h-50 w-50 rounded-sm border-1 border-amber-400 bg-red-950"
     >
       <option selected value="all">All difficulties</option>
       <option value="hard">Hard</option>
@@ -30,5 +30,3 @@ watch(difficulty, (difficulty) => {
     <p class="m-2">Difficulty: {{ difficulty }}</p>
   </section>
 </template>
-
-<style scoped></style>
