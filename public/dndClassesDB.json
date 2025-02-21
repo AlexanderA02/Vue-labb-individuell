@@ -3,28 +3,84 @@
     "id": "1",
     "name": "Barbarian",
     "difficulty": "easy",
-    "description": "This is the class description",
-    "recommended-stats": ["Recommended stat 1", "Recommended stat 2"]
+    "description": "A relentless combatant, fueled by fury or it's totem bonds with animals. In tune with the natural order.",
+    "recommended-stats": ["Strength", "Constitution"]
   },
   {
     "id": "2",
     "name": "Bard",
     "difficulty": "hard",
-    "description": "This is the class description",
-    "recommended-stats": ["Recommended stat 1", "Recommended stat 2"]
+    "description": "A story teller or musician using his wits, magic, and lore to get out of (or avoid) tight situations.",
+    "recommended-stats": ["Charisma", "Dexterity"]
   },
   {
     "id": "3",
     "name": "Cleric",
     "difficulty": "medium",
-    "description": "This is the class description",
-    "recommended-stats": ["Recommended stat 1", "Recommended stat 2"]
+    "description": "A Holy man or woman devoted to a deity. Capable of bolstering the party and heal their wounds, or laying low their enemies with divine wrath.",
+    "recommended-stats": ["Wisdom", "Constitution"]
   },
   {
     "id": "4",
     "name": "Druid",
     "difficulty": "medium",
-    "description": "This is the class description",
-    "recommended-stats": ["Recommended stat 1", "Recommended stat 2"]
+    "description": "A nomad devoted to the world and the powers of Nature. Capable of adopting the form of a beast for battle or utility. Capable of bolstering the party and heal their wounds, or laying low their enemies with nature's wrath.",
+    "recommended-stats": ["Wisdom", "Constitution"]
+  },
+  {
+    "id": "5",
+    "name": "Fighter",
+    "difficulty": "easy",
+    "description": "Skilled combatant or strategist typically relying on his or her heavy armor and weapons to cut down their enemies. His training gives him unique abilities.",
+    "recommended-stats": ["Strength", "Constitution"]
+  },
+  {
+    "id": "6",
+    "name": "Monk",
+    "difficulty": "medium",
+    "description": "A martial artist pulling on the power of his or her own body to produce impressive results",
+    "recommended-stats": ["Dexterity", "Wisdom"]
+  },
+  {
+    "id": "7",
+    "name": "Paladin",
+    "difficulty": "medium",
+    "description": "Nearly as skilled as the Fighter but bolsters their efforts with divine magic. through his devotion he gains special boons from their god.",
+    "recommended-stats": ["Strength", "Charisma"]
+  },
+  {
+    "id": "8",
+    "name": "Ranger",
+    "difficulty": "medium",
+    "description": "One who uses a unique blend of wilderness knowledge and martial ability to be a deadly hunter, with a bow, a pet or melee weapons.",
+    "recommended-stats": ["Dexterity", "Wisdom"]
+  },
+  {
+    "id": "9",
+    "name": "Rogue",
+    "difficulty": "easy",
+    "description": "A thief, assassin or stealthy character who has a knack for picking out their enemies weaknesses and exploiting them.",
+    "recommended-stats": ["Dexterity", "Intelligence"]
+  },
+  {
+    "id": "10",
+    "name": "Sorcerer",
+    "difficulty": "hard",
+    "description": "A magic user who draws their power from within, summoning their innate magical power and bending it to their will.",
+    "recommended-stats": ["Charisma", "Constitution"]
+  },
+  {
+    "id": "11",
+    "name": "Warlock",
+    "difficulty": "hard",
+    "description": "Bound to a powerful entity through a pact, the warlock trades favors for boons and spells.",
+    "recommended-stats": ["Charisma", "Constitution"]
+  },
+  {
+    "id": "12",
+    "name": "Wizard",
+    "difficulty": "hard",
+    "description": "A keeper of arcane secrets and forgotten knowledge, the wizard manipulates magic and spells with cunning.",
+    "recommended-stats": ["Intelligence", "Constitution"]
   }
 ]
