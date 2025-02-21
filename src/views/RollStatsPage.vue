@@ -9,15 +9,22 @@ const route = useRoute()
 const dndClassesStore = useDndClassesStore()
 const totalScore = ref(0)
 const dndStats = ['Strength', 'Dexterity', 'Constitution', 'Intelligence', 'Wisdom', 'Charisma']
-const recommendedStats = ref([])
+const recommendedStats = ref(
+  dndClassesStore.dndClasses.find((rightDndClass) => {
+    return rightDndClass.name === route.params.dndClass
+  })?.['recommended-stats'],
+)
 </script>
 
 <template>
   <main class="flex min-h-screen flex-col items-center pt-16">
-    <h2 v-if="route.params.dndClass" class="text-center text-3xl font-bold">
+    <h2 v-if="route.params.dndClass" class="mb-4 text-center text-3xl font-bold">
       Roll your stats here {{ route.params.dndClass }}.
     </h2>
-    <h2 v-else class="text-center text-3xl font-bold">Roll your stats here champion!</h2>
+    <h2 v-else class="mb-4 text-center text-3xl font-bold">Roll your stats here champion!</h2>
+    <p v-if="route.params.dndClass" v-for="stat in recommendedStats">
+      <span class="font-semibold">Recommended stat:</span> {{ stat }}
+    </p>
     <p class="mt-4 mb-6">Click the boxes to roll a stat.</p>
 
     <ul class="grid grid-cols-3 text-center">
