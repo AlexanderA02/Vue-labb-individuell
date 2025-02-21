@@ -13,7 +13,7 @@ const recommendedStats = ref([])
 </script>
 
 <template>
-  <main class="flex min-h-125 flex-col items-center pt-16">
+  <main class="flex min-h-screen flex-col items-center pt-16">
     <h2 v-if="route.params.dndClass" class="text-3xl font-bold">
       Roll your stats here {{ route.params.dndClass }}.
     </h2>
@@ -27,9 +27,8 @@ const recommendedStats = ref([])
       </li>
     </ul>
 
-    <h3>
+    <h3 class="mt-8 text-2xl font-bold">
       Your total stat-score is: <u>{{ totalScore }}</u>
     </h3>
-    <p></p>
   </main>
 </template>

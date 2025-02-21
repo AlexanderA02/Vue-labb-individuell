@@ -3,7 +3,9 @@
 <script setup></script>
 
 <template>
-  <footer class="flex min-h-45 justify-around bg-red-950 text-white">
+  <footer
+    class="flex min-h-45 flex-col items-center justify-around bg-red-950 text-white lg:flex-row"
+  >
     <section class="max-w-100 pb-5">
       <h1 class="pt-5 text-2xl font-bold">Contact us</h1>
       <p>Telephone: 123 456 78 90</p>

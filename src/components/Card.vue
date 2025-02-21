@@ -11,7 +11,7 @@ const props = defineProps({
 
 <template>
   <section
-    class="m-3 min-h-60 w-120 rounded-xl border-2 border-amber-400 bg-red-950 p-5 text-white"
+    class="m-3 min-h-60 max-w-120 rounded-xl border-2 border-amber-400 bg-red-950 p-5 text-white"
   >
     <RouterLink :to="`/roll-stats/${props.name}`" class="text-2xl font-bold hover:underline">
       {{ props.name }}

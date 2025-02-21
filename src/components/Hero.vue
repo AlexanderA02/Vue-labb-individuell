@@ -4,7 +4,9 @@
   <section
     class="flex items-center justify-center bg-[url('src/assets/dragon_fire.png')] bg-cover bg-center text-white"
   >
-    <p class="max-h-8/10 w-3/10 rounded-2xl border-2 border-amber-400 bg-red-950 p-8 text-center">
+    <p
+      class="max-h-8/10 max-w-6/10 min-w-3/10 rounded-2xl border-2 border-amber-400 bg-red-950 p-8 text-center md:text-2xl"
+    >
       Dungeons & Dragons (D&D) is a cooperative roleplaying game full of fantasy of adventure. These
       adventures can be anything from exploring an ancient crypt full of ghouls to rading a dragon's
       treasure, but what they all have in common is adventurers. There are many types of adventurers
