@@ -8,11 +8,11 @@ const props = defineProps({
   difficulty: String,
 })
 
+// Data/variables
 const dndClassesStore = useDndClassesStore()
 
 // Methods/functions
 const filterOnDifficulty = computed(() => {
-  // .value ska inte användas här precis som att det inte ska användas i html:n
   return dndClassesStore.dndClasses.filter((dndClass) => {
     return dndClass.difficulty === props.difficulty
   })

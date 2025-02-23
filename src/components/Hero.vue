@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
   <section
     class="flex items-center justify-center bg-[url('src/assets/dragon_fire.png')] bg-cover bg-center text-white"

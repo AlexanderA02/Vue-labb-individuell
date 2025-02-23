@@ -26,5 +26,3 @@ watch(result, (result) => {
     {{ result }}
   </button>
 </template>
-
-<style scoped></style>

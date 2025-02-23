@@ -1,7 +1,4 @@
 <!-- Component named FooterComp as to not clash with the inbuilt footer tag. -->
-
-<script setup></script>
-
 <template>
   <footer
     class="flex min-h-45 flex-col items-center justify-around bg-red-950 text-white lg:flex-row"

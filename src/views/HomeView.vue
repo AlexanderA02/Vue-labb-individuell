@@ -16,5 +16,3 @@ const difficultySelected = ref('all')
     <DndClassList :difficulty="difficultySelected"></DndClassList>
   </main>
 </template>
-
-<style scoped></style>
