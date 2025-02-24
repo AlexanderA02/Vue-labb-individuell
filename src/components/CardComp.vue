@@ -2,10 +2,10 @@
 import { RouterLink } from 'vue-router'
 
 const props = defineProps({
-  name: String,
-  difficulty: String,
-  description: String,
-  recommendedStats: Array,
+  name: { type: String, default: '' },
+  difficulty: { type: String, default: '' },
+  description: { type: String, default: '' },
+  recommendedStats: { type: Array, default: () => [] },
 })
 </script>
 
@@ -18,7 +18,7 @@ const props = defineProps({
     </RouterLink>
     <p><span class="font-semibold">Difficulty:</span> {{ props.difficulty }}</p>
     <p><span class="font-semibold">Description:</span> {{ props.description }}</p>
-    <p v-for="stat in props.recommendedStats">
+    <p v-for="stat in props.recommendedStats" :key="stat">
       <span class="font-semibold">Recommended stat:</span> {{ stat }}
     </p>
   </section>

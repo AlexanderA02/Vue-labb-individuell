@@ -16,9 +16,9 @@ watch(difficulty, (difficulty) => {
     <h2 class="m-2 text-2xl font-bold">Filter classes based on difficulty</h2>
 
     <select
+      id="difficulty"
       v-model="difficulty"
       name="difficulty"
-      id="difficulty"
       class="m-2 h-50 w-50 rounded-sm border-1 border-amber-400 bg-red-950"
     >
       <option selected value="all">All difficulties</option>

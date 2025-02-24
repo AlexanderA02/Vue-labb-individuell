@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { useDndClassesStore } from '@/pinia-store/store'
-import Dice from '@/components/Dice.vue'
+import DiceComp from '@/components/DiceComp.vue'
 
 // useRoute() returnerar ett Objekt som representerar url:en. Detta är användbart då jag behöver få tillgång till params:en i url:en för att veta vilken länk som användaren har klickat på.
 const route = useRoute()
@@ -22,15 +22,16 @@ const recommendedStats = ref(
       Roll your stats here {{ route.params.dndClass }}.
     </h2>
     <h2 v-else class="mb-4 text-center text-3xl font-bold">Roll your stats here champion!</h2>
-    <p v-if="route.params.dndClass" v-for="stat in recommendedStats">
+    <p v-for="stat in recommendedStats" v-if="route.params.dndClass" :key="stat">
       <span class="font-semibold">Recommended stat:</span> {{ stat }}
     </p>
     <p class="mt-4 mb-6">Click the boxes to roll a stat.</p>
 
     <ul class="grid grid-cols-3 text-center">
-      <li v-for="stat in dndStats">
+      <li v-for="stat in dndStats" :key="stat">
         <h3 class="font-semibold">{{ stat }}</h3>
-        <Dice @dice-rolled="(result) => (totalScore += result)"></Dice>
+        <!-- TotalScore kan förbättras i framtiden. -->
+        <DiceComp @dice-rolled="(result) => (totalScore += result)"></DiceComp>
       </li>
     </ul>
 

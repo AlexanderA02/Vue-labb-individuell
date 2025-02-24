@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import DndClassList from '@/components/DndClassList.vue'
-import Hero from '@/components/Hero.vue'
+import HeroComp from '@/components/HeroComp.vue'
 import FilterComp from '@/components/FilterComp.vue'
 
 const difficultySelected = ref('all')
@@ -9,7 +9,7 @@ const difficultySelected = ref('all')
 
 <template>
   <main class="min-h-screen">
-    <Hero></Hero>
+    <HeroComp></HeroComp>
     <FilterComp
       @difficulty-selected="(difficulty) => (difficultySelected = difficulty)"
     ></FilterComp>

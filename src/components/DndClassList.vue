@@ -1,11 +1,11 @@
 <script setup>
 import { computed } from 'vue'
-import Card from './Card.vue'
+import CardComp from './CardComp.vue'
 import { useDndClassesStore } from '@/pinia-store/store'
 
 // props
 const props = defineProps({
-  difficulty: String,
+  difficulty: { type: String, default: '' },
 })
 
 // Data/variables
@@ -26,23 +26,23 @@ const filterOnDifficulty = computed(() => {
     class="grid grid-cols-1 place-items-center lg:grid-cols-2"
   >
     <!-- [] används runt recommended-stats eftersom att man vanligtvis inte kan ha bindestreck i JavaScript variabel namn. -->
-    <Card
-      v-if="difficulty !== 'all'"
+    <CardComp
       v-for="dndClass in filterOnDifficulty"
+      v-if="difficulty !== 'all'"
       :key="dndClass.id"
       :name="dndClass.name"
       :difficulty="dndClass.difficulty"
       :description="dndClass.description"
       :recommended-stats="dndClass['recommended-stats']"
-    ></Card>
-    <Card
-      v-else
+    ></CardComp>
+    <CardComp
       v-for="dndClass in dndClassesStore.dndClasses"
+      v-else
       :key="dndClass.name"
       :name="dndClass.name"
       :difficulty="dndClass.difficulty"
       :description="dndClass.description"
       :recommended-stats="dndClass['recommended-stats']"
-    ></Card>
+    ></CardComp>
   </section>
 </template>

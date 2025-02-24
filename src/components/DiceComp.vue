@@ -20,8 +20,8 @@ watch(result, (result) => {
 
 <template>
   <button
-    @click="rollDice"
     class="h-16 w-16 rounded-md border-2 border-amber-400 bg-red-950 text-2xl font-semibold text-white"
+    @click="rollDice"
   >
     {{ result }}
   </button>
